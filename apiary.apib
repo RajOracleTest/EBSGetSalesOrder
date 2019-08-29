@@ -1,0 +1,44 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# GetSalesOrderDetailsEBS
+
+Fetch Sales Order from EBS using header id.
+
+## Sales Order Collection [/questions]
+
+### List All SalesOrder [GET]
+
++ Response 200 (application/json)
+
+    {
+        "getAllLinesData_Output": {
+            "OutputParameters": {
+                "Output": {
+                    "OrderLinesBean": [
+                        {
+                            "AllLinesVORow": [
+                                {
+                                    "LineId": "4651747",
+                                    "InventoryItemName": "FIT2300",
+                                    "HeaderId": "2964919",
+                                    "InventoryItemDescription": "FIT 2300 Treadmill",
+                                    "OrderQuantityUom": "Ea",
+                                    "OrderedQuantity": "1",
+                                    "ExtendedAmount": "2185",
+                                    "FlowStatusMeaning": "Awaiting Shipping"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "ControlBean": {
+                    "fields": "",
+                    "filter": "",
+                    "limit": "",
+                    "offset": "",
+                    "sort": ""
+                }
+            }
+        }
+    }
